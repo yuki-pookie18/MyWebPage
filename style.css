@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282C33;
+    color: #ABB2BF;
+    font-family: 'Fira Code', monospace;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 32px 24px;
+    display: flex;
+    gap: 32px;
+    z-index: 1000;
+    background: transparent;
+}
+
+nav a {
+    color: #ABB2BF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav a::before {
+    content: '#';
+    color: #C778DD;
+    margin-right: 4px;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+}
+
+/* Logo */
+body::before {
+    content: '@Agon-Augusta';
+    position: fixed;
+    top: 32px;
+    left: 24px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 1000;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Sections */
+.section {
+    min-height: 100vh;
+    padding: 100px 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Home Section */
+#Home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+#Home h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+    line-height: 1.2;
+}
+
+#Home h1::before {
+    display: none;
+}
+
+#Home > p:first-of-type {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    color: #ABB2BF;
+    max-width: 500px;
+}
+
+#Home h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 48px;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+}
+
+#Home h2::before {
+    content: '#';
+    color: #C778DD;
+    margin-right: 8px;
+}
+
+#Home p {
+    color: #ABB2BF;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    max-width: 500px;
+}
+
+/* Projects Section */
+#Projects {
+    padding-top: 100px;
+}
+
+#Projects h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 48px;
+    color: #FFFFFF;
+    display: inline-block;
+    position: relative;
+}
+
+#Projects h1::before {
+    content: '#';
+    color: #C778DD;
+    margin-right: 8px;
+}
+
+#Projects h1::after {
+    content: '';
+    position: absolute;
+    left: calc(100% + 16px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 1px;
+    background-color: #C778DD;
+}
+
+#Projects a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    transition: color 0.3s ease;
+}
+
+#Projects a:hover {
+    color: #C778DD;
+}
+
+#Projects p {
+    color: #ABB2BF;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+    max-width: 700px;
+}
+
+/* Socials Section */
+#Socials {
+    padding-top: 100px;
+}
+
+#Socials h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 48px;
+    color: #FFFFFF;
+}
+
+#Socials h1::before {
+    content: '#';
+    color: #C778DD;
+    margin-right: 8px;
+}
+
+#Socials ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Socials li {
+    margin: 16px 0;
+}
+
+#Socials li::before {
+    content: '';
+    display: none;
+}
+
+#Socials a {
+    color: #ABB2BF;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+#Socials a:hover {
+    color: #C778DD;
+}
+
+/* FAQ Section */
+#FAQ {
+    padding-top: 100px;
+}
+
+#FAQ h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 48px;
+    color: #FFFFFF;
+}
+
+#FAQ h1::before {
+    content: '#';
+    color: #C778DD;
+    margin-right: 8px;
+}
+
+#FAQ h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+}
+
+#FAQ h2::before {
+    content: '#';
+    color: #C778DD;
+    margin-right: 8px;
+}
+
+#FAQ h3 {
+    color: #C778DD;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 24px;
+}
+
+#FAQ p {
+    color: #ABB2BF;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* Decorative elements */
+.section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #ABB2BF;
+    opacity: 0.2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        padding: 24px 16px;
+        gap: 16px;
+        font-size: 14px;
+    }
+    
+    body::before {
+        top: 24px;
+        left: 16px;
+        font-size: 14px;
+    }
+    
+    .section {
+        padding: 80px 16px;
+    }
+    
+    #Home {
+        padding-top: 120px;
+    }
+    
+    #Home h1,
+    #Projects h1,
+    #Socials h1,
+    #FAQ h1 {
+        font-size: 24px;
+    }
+    
+    #Projects h1::after {
+        width: 200px;
+    }
+}
+
+.faq-box {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.faq-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.faq-box input,
+.faq-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.faq-box textarea {
+  resize: none;
+  height: 100px;
+}
+
+.faq-box button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #C778DD;
+  cursor: pointer;
+  font-weight: bold;
+}
