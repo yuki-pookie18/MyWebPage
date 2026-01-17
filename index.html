@@ -3,83 +3,246 @@
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
+    <title>Agon_augusta - Portfolio</title>
     <link rel="stylesheet" href="style.css">
  </head>
  <body>
-    <nav>
-        <a href="#Home">Home</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Socials">Contact</a>
-        <a href="#FAQ">FAQS</a>
+    <!-- FEATURE 1: MOBILE HAMBURGER MENU -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="nav">
+        <a href="#Home">home</a>
+        <a href="#Projects">works</a>
+        <a href="#Skills">skills</a>
+        <a href="#FAQ">faq</a>
+        <a href="#Contact">contact</a>
     </nav>
 
     <section id="Home" class="section">
-        <h2>AboutMe</h2>
-         <p>Hii, My name is Devashish Hajong, and I am a student pursuing a diploma in Electronics and Communication. I have been learning to code for about 3 months now, and my expertise are HTML and CSS right now, although I am also learning JavaScript.</p>
-        <h1>Schooling/course</h1>
+        <h1>Agon_augusta</h1>
+         <p>Hii, My name is Devashish Hajong (Agon_augusta), and I am a student pursuing a diploma in Electronics and Communication. I have been learning to code for about 3 months now, and my expertise are HTML and CSS right now, although I am also learning JavaScript.</p>
+        <h2>Schooling/course</h2>
          <p>I am currently in second semester of diploma in electronics and communication</p>
-         <p>Collage: Shillong Polytechnic</p>
+         <p>College: Shillong Polytechnic</p>
     </section>
 
     <section id="Projects" class="section">
-        <h2>Projects</h2>
-        <a href="https://github.com/yuki-pookie18/pixel-pet-planner">DailyPlanner</a>
-         <p>I have created a simple To-Do List application using HTML, CSS and JavaScript. It allows users to add, delete and mark tasks as completed.
-            It uses a pixel art ui design to give it a retro and calming look and it has a reward system which uses positve messages to motivate users to complete their tasks.
-         </p>
-        <a href="https://github.com/yuki-pookie18/Music-Player">Music Player</a>
-         <p>I have created a simple music player using HTML, CSS, JavaScript, and Electron. It allows users to play, pause and stop music.
-            it also has a pixel art ui design to give it a retro look, and it supports multiple audio formats like mp3, wav, etc. it will also get playlist support in the future.
-        </p>
+        <h1>Projects</h1>
+        
+        <!-- PROJECT CARD 1 -->
+        <div class="project-card">
+            <a href="https://github.com/yuki-pookie18/pixel-pet-planner" target="_blank">DailyPlanner</a>
+            <div class="tech-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+            </div>
+            <p>I have created a simple To-Do List application using HTML, CSS and JavaScript. It allows users to add, delete and mark tasks as completed.
+                It uses a pixel art ui design to give it a retro and calming look and it has a reward system which uses positive messages to motivate users to complete their tasks.
+            </p>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div class="project-card">
+            <a href="https://github.com/yuki-pookie18/Music-Player" target="_blank">Music Player</a>
+            <div class="tech-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Electron</span>
+            </div>
+            <p>I have created a simple music player using HTML, CSS, JavaScript, and Electron. It allows users to play, pause and stop music.
+                it also has a pixel art ui design to give it a retro look, and it supports multiple audio formats like mp3, wav, etc. it will also get playlist support in the future.
+            </p>
+        </div>
     </section>
 
-    <section id="Socials" class="section">
-        <h2>Contact me</h2>
-        <ul>
-            <li><a href="https://github.com/yuki-pookie18">GitHub</a></li>
-            <li><a href="https://www.instagram.com/agon_augusta/">Instagram</a></li>
-            <li><a href="https://www.threads.com/@agon_augusta?hl=en">Threads</a></li>
-        </ul>
+    <!-- FEATURE 2: SKILLS SECTION -->
+    <section id="Skills" class="section">
+        <h1>Skills</h1>
+        
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">HTML</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">CSS</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">JavaScript</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <div class="skill-grid">
+                    <div class="skill-item">
+                        <div class="skill-icon">Git</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">Figma</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-icon">VS Code</div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- FEATURE 3: CONTACT FORM -->
+    <!-- FAQ SECTION - BACK BY POPULAR DEMAND! -->
     <section id="FAQ" class="section">
         <h1>FAQ</h1>
         <p>Q: What programming languages do you know?</p>
         <p>A: I know HTML, CSS, and JavaScript.</p>
+        
         <p>Q: What is your current project?</p>
         <p>A: My current project is a music player with a pixel art UI.</p>
+        
         <p>Q: Where can I find your projects?</p>
         <p>A: You can find my projects on my GitHub profile.</p>
         
         <h2>Personal</h2>
         <p>Q: What are your hobbies?</p>
         <p>A: I enjoy coding, playing guitar, and playing video games.</p>
+        
         <p>Q: Do you have any pets?</p>
         <p>A: I had a dog, he died.</p>
+        
         <p>Q: Are you in a Relationship?</p>
         <p>A: No, I am not(please contact).</p>
 
-        <p>For more questions u can email me:0</p>
+        <p>For more questions u can email me:</p>
         <h3>email/itsdevasishh@gmail.com</h3>
-
-
-
-    <div class="faq-box">
-       <h2>Ask a Question</h2>
-
-        <form action="mailto:itsdevasishh@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="Name" placeholder="Your Name" required>
-
-       <textarea name="Question" placeholder="Your Question" required></textarea>
-
-      <button type="submit">Send</button>
-     </form>
-    </div>
-
-        
     </section>
 
- </body>
+    <section id="Contact" class="section">
+        <h1>Contact Me</h1>
+        <p class="contact-intro">I'm interested in freelance opportunities. However, if you have other request or question, don't hesitate to contact me.</p>
+        
+        <div class="contact-container">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your message here..." required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
 
-</html>    
+            <div class="contact-info">
+                <h3>Message me here</h3>
+                <div class="contact-links">
+                    <a href="https://github.com/yuki-pookie18" target="_blank" class="contact-link">
+                        <span class="icon">🐙</span> GitHub
+                    </a>
+                    <a href="https://www.instagram.com/agon_augusta/" target="_blank" class="contact-link">
+                        <span class="icon">📷</span> Instagram
+                    </a>
+                    <a href="https://www.threads.com/@agon_augusta?hl=en" target="_blank" class="contact-link">
+                        <span class="icon">🧵</span> Threads
+                    </a>
+                    <a href="mailto:itsdevasishh@gmail.com" class="contact-link">
+                        <span class="icon">📧</span> itsdevasishh@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="form-message" class="form-message"></div>
+    </section>
+
+    <script>
+        // HAMBURGER MENU FUNCTIONALITY
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                const nav = document.getElementById('nav');
+                const hamburger = document.querySelector('.hamburger');
+                nav.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // CONTACT FORM SUBMISSION
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Show success message
+            const messageDiv = document.getElementById('form-message');
+            messageDiv.innerHTML = `
+                <div class="success-message">
+                    ✓ Thank you ${name}! Your message has been received. I'll get back to you soon at ${email}
+                </div>
+            `;
+            messageDiv.style.display = 'block';
+            
+            // Clear form
+            document.querySelector('.contact-form').reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+            
+            // In a real website, you would send this data to a server
+            console.log('Form submitted:', { name, email, subject, message });
+        }
+    </script>
+
+ </body>
+</html>
